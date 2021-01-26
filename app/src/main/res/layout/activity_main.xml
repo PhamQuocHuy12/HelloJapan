@@ -4,78 +4,1196 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000000"
-    android:backgroundTint="#000000"
-    android:foregroundTint="#2196F3"
+    android:background="@color/white"
+    android:backgroundTint="#5F98C3"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Tap to play pronounciation"
-        android:textColor="#03A9F4"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.963" />
-
-    <Button
-        android:id="@+id/hiragana_button"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#03A9F4"
-        android:foregroundTint="#000000"
-        android:text="Hiragana"
-        android:textColor="#FFFFFF"
-        app:iconTint="#2196F3"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.15"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.916"
-        app:rippleColor="#2196F3" />
-
-    <Button
-        android:id="@+id/katakana_button"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#2196F3"
-        android:foregroundTint="#000000"
-        android:shadowColor="#000000"
-        android:text="Katakana"
-        android:textColor="#FFFFFF"
-        android:textColorHighlight="#000000"
-        android:textColorLink="#000000"
-        app:iconTint="#2196F3"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.819"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.916"
-        app:rippleColor="#000000"
-        app:strokeColor="#000000" />
-
     <ScrollView
-        android:layout_width="407dp"
-        android:layout_height="465dp"
-        android:layout_marginBottom="88dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
+        android:id="@+id/hiragana_board"
+        android:layout_width="wrap_content"
+        android:layout_height="500dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="150dp"
+        android:background="@drawable/button_bg"
+
+        android:backgroundTint="#32FFFFFF"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0">
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"/>
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/hiragana_line1"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/hira_a"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/hir_a"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+                <Button
+                    android:id="@+id/hira_i"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/hir_i"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+                <Button
+                    android:id="@+id/hira_u"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/hir_u"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+                <Button
+                    android:id="@+id/hira_e"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/hir_e"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+                <Button
+                    android:id="@+id/hira_o"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/hir_o"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/hiragana_line2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/hira_ka"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/hir_ka"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+                <Button
+                    android:id="@+id/hira_ki"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/hir_ki"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+                <Button
+                    android:id="@+id/hira_ku"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/hir_ku"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+                <Button
+                    android:id="@+id/hira_ke"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/hir_ke"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+                <Button
+                    android:id="@+id/hira_ko"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/hir_ko"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/hiragana_line3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/hira_sa"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/hir_sa"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+                <Button
+                    android:id="@+id/hira_shi"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/hir_shi"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+                <Button
+                    android:id="@+id/hira_su"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/hir_su"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+                <Button
+                    android:id="@+id/hira_se"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/hir_se"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+                <Button
+                    android:id="@+id/hira_so"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/hir_so"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/hiragana_line4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/hira_ta"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/hir_ta"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+                <Button
+                    android:id="@+id/hira_chi"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/hir_chi"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+                <Button
+                    android:id="@+id/hira_tsu"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/hir_tsu"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+                <Button
+                    android:id="@+id/hira_te"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/hir_te"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+                <Button
+                    android:id="@+id/hira_to"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/hir_to"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/hiragana_line5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/hira_na"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/hir_na"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+                <Button
+                    android:id="@+id/hira_ni"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/hir_ni"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+                <Button
+                    android:id="@+id/hira_nu"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/hir_nu"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+                <Button
+                    android:id="@+id/hira_ne"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/hir_ne"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+                <Button
+                    android:id="@+id/hira_no"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/hir_no"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/hiragana_line6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/hira_ha"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/hir_ha"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+                <Button
+                    android:id="@+id/hira_hi"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/hir_hi"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+                <Button
+                    android:id="@+id/hira_fu"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/hir_fu"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+                <Button
+                    android:id="@+id/hira_he"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/hir_he"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+                <Button
+                    android:id="@+id/hira_ho"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/hir_ho"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/line7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/hira_ma"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/hir_ma"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+                <Button
+                    android:id="@+id/hira_mi"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/hir_mi"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+                <Button
+                    android:id="@+id/hira_mu"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/hir_mu"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+                <Button
+                    android:id="@+id/hira_me"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/hir_me"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+                <Button
+                    android:id="@+id/hira_mo"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/hir_mo"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/hiragana_line8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/hira_ya"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/hir_ya"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+                <Button
+                    android:id="@+id/hira_yu"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/hir_yu"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+                <Button
+                    android:id="@+id/hira_yo"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/hir_yo"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/hiragana_line9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/hira_ra"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/hir_ra"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+                <Button
+                    android:id="@+id/hira_ri"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/hir_ri"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+                <Button
+                    android:id="@+id/hira_ru"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/hir_ru"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+                <Button
+                    android:id="@+id/hira_re"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/hir_re"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+                <Button
+                    android:id="@+id/hira_ro"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/hir_ro"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/hiragana_line10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/hira_wa"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/hir_wa"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+
+                <Button
+                    android:id="@+id/hira_wo"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="180dp"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/hir_wo"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/hiragana_line11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/hira_n"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/hir_n"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+            </LinearLayout>
+        </LinearLayout>
     </ScrollView>
+
+
+    <ScrollView
+        android:id="@+id/katakana_board"
+        android:layout_width="wrap_content"
+        android:layout_height="500dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="150dp"
+        android:background="@drawable/button_bg"
+
+        android:backgroundTint="#32FFFFFF"
+        android:orientation="vertical"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/katakana_line1"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/kata_a"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/kat_a"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+                <Button
+                    android:id="@+id/kata_i"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/kat_i"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+                <Button
+                    android:id="@+id/kata_u"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/kat_u"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+                <Button
+                    android:id="@+id/kata_e"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/kat_e"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+                <Button
+                    android:id="@+id/kata_o"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/kat_o"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/katakana_line2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/kata_ka"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/kat_ka"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+                <Button
+                    android:id="@+id/kata_ki"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/kat_ki"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+                <Button
+                    android:id="@+id/kata_ku"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/kat_ku"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+                <Button
+                    android:id="@+id/kata_ke"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/kat_ke"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+                <Button
+                    android:id="@+id/kata_ko"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/kat_ko"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/katakana_line3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/kata_sa"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/kat_sa"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+                <Button
+                    android:id="@+id/kata_shi"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/kat_shi"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+                <Button
+                    android:id="@+id/kata_su"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/kat_su"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+                <Button
+                    android:id="@+id/kata_se"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/kat_se"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+                <Button
+                    android:id="@+id/kata_so"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/kat_so"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/katakana_line4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/kata_ta"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/kat_ta"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+                <Button
+                    android:id="@+id/kata_chi"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/kat_chi"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+                <Button
+                    android:id="@+id/kata_tsu"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/kat_tsu"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+                <Button
+                    android:id="@+id/kata_te"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/kat_te"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+                <Button
+                    android:id="@+id/kata_to"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/kat_to"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/katakana_line5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/kata_na"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/kat_na"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+                <Button
+                    android:id="@+id/kata_ni"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/kat_ni"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+                <Button
+                    android:id="@+id/kata_nu"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/kat_nu"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+                <Button
+                    android:id="@+id/kata_ne"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/kat_ne"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+                <Button
+                    android:id="@+id/kata_no"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/kat_no"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/katakana_line6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/kata_ha"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/kat_ha"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+                <Button
+                    android:id="@+id/kata_hi"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/kat_hi"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+                <Button
+                    android:id="@+id/kata_fu"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/kat_fu"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+                <Button
+                    android:id="@+id/kata_he"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/kat_he"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+                <Button
+                    android:id="@+id/kata_ho"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/kat_ho"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/katakana_line7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/kata_ma"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/kat_ma"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+                <Button
+                    android:id="@+id/kata_mi"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/kat_mi"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+                <Button
+                    android:id="@+id/kata_mu"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/kat_mu"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+                <Button
+                    android:id="@+id/kata_me"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/kat_me"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+                <Button
+                    android:id="@+id/kata_mo"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/kat_mo"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/katakana_line8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/kata_ya"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/kat_ya"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+                <Button
+                    android:id="@+id/kata_yu"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/kat_yu"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+                <Button
+                    android:id="@+id/kata_yo"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/kat_yo"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/katakana_line9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/kata_ra"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/kat_ra"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+                <Button
+                    android:id="@+id/kata_ri"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/kat_ri"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+                <Button
+                    android:id="@+id/kata_ru"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/kat_ru"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+                <Button
+                    android:id="@+id/kata_re"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/kat_re"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+                <Button
+                    android:id="@+id/kata_ro"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/kat_ro"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/katakana_line10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/kata_wa"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/kat_wa"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+
+                <Button
+                    android:id="@+id/kata_wo"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="180dp"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/kat_wo"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/katakana_line11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/kata_n"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@null"
+                    android:text="@string/kat_n"
+                    android:textSize="10sp"
+                    app:backgroundTint="@null" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/hiragana"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/button_bg"
+        android:backgroundTint="@null"
+        android:text="Hiragana"
+        android:textSize="10sp"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/katakana"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/button_bg"
+        android:backgroundTint="@null"
+        android:backgroundTintMode="@null"
+        android:text="Katakana"
+        android:textSize="10sp"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.995"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
