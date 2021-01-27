@@ -19,7 +19,7 @@
 
         android:backgroundTint="#32FFFFFF"
         android:orientation="vertical"
-        android:visibility="gone"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -45,6 +45,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/hir_a"
                     android:textSize="10sp"
+                    android:onClick="a_click"
                     app:backgroundTint="@null" />
 
                 <Button
@@ -55,6 +56,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/hir_i"
                     android:textSize="10sp"
+                    android:onClick="i_click"
                     app:backgroundTint="@null" />
 
                 <Button
@@ -65,6 +67,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/hir_u"
                     android:textSize="10sp"
+                    android:onClick="u_click"
                     app:backgroundTint="@null" />
 
                 <Button
@@ -75,6 +78,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/hir_e"
                     android:textSize="10sp"
+                    android:onClick="e_click"
                     app:backgroundTint="@null" />
 
                 <Button
@@ -85,6 +89,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/hir_o"
                     android:textSize="10sp"
+                    android:onClick="o_click"
                     app:backgroundTint="@null" />
 
             </LinearLayout>
@@ -103,6 +108,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/hir_ka"
                     android:textSize="10sp"
+                    android:onClick="ka_click"
                     app:backgroundTint="@null" />
 
                 <Button
@@ -113,6 +119,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/hir_ki"
                     android:textSize="10sp"
+                    android:onClick="ki_click"
                     app:backgroundTint="@null" />
 
                 <Button
@@ -123,6 +130,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/hir_ku"
                     android:textSize="10sp"
+                    android:onClick="ku_click"
                     app:backgroundTint="@null" />
 
                 <Button
@@ -133,6 +141,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/hir_ke"
                     android:textSize="10sp"
+                    android:onClick="ke_click"
                     app:backgroundTint="@null" />
 
                 <Button
@@ -143,6 +152,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/hir_ko"
                     android:textSize="10sp"
+                    android:onClick="ko_click"
                     app:backgroundTint="@null" />
 
             </LinearLayout>
@@ -161,6 +171,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/hir_sa"
                     android:textSize="10sp"
+                    android:onClick="sa_click"
                     app:backgroundTint="@null" />
 
                 <Button
@@ -171,6 +182,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/hir_shi"
                     android:textSize="10sp"
+                    android:onClick="shi_click"
                     app:backgroundTint="@null" />
 
                 <Button
@@ -181,6 +193,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/hir_su"
                     android:textSize="10sp"
+                    android:onClick="su_click"
                     app:backgroundTint="@null" />
 
                 <Button
@@ -191,6 +204,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/hir_se"
                     android:textSize="10sp"
+                    android:onClick="se_click"
                     app:backgroundTint="@null" />
 
                 <Button
@@ -201,6 +215,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/hir_so"
                     android:textSize="10sp"
+                    android:onClick="so_click"
                     app:backgroundTint="@null" />
 
             </LinearLayout>
@@ -219,6 +234,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/hir_ta"
                     android:textSize="10sp"
+                    android:onClick="ta_click"
                     app:backgroundTint="@null" />
 
                 <Button
@@ -229,6 +245,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/hir_chi"
                     android:textSize="10sp"
+                    android:onClick="chi_click"
                     app:backgroundTint="@null" />
 
                 <Button
@@ -239,6 +256,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/hir_tsu"
                     android:textSize="10sp"
+                    android:onClick="tsu_click"
                     app:backgroundTint="@null" />
 
                 <Button
@@ -249,6 +267,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/hir_te"
                     android:textSize="10sp"
+                    android:onClick="te_click"
                     app:backgroundTint="@null" />
 
                 <Button
@@ -259,6 +278,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/hir_to"
                     android:textSize="10sp"
+                    android:onClick="to_click"
                     app:backgroundTint="@null" />
 
             </LinearLayout>
@@ -277,6 +297,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/hir_na"
                     android:textSize="10sp"
+                    android:onClick="na_click"
                     app:backgroundTint="@null" />
 
                 <Button
@@ -287,6 +308,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/hir_ni"
                     android:textSize="10sp"
+                    android:onClick="ni_click"
                     app:backgroundTint="@null" />
 
                 <Button
@@ -297,6 +319,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/hir_nu"
                     android:textSize="10sp"
+                    android:onClick="nu_click"
                     app:backgroundTint="@null" />
 
                 <Button
@@ -307,6 +330,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/hir_ne"
                     android:textSize="10sp"
+                    android:onClick="ne_click"
                     app:backgroundTint="@null" />
 
                 <Button
@@ -317,6 +341,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/hir_no"
                     android:textSize="10sp"
+                    android:onClick="no_click"
                     app:backgroundTint="@null" />
 
             </LinearLayout>
@@ -335,6 +360,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/hir_ha"
                     android:textSize="10sp"
+                    android:onClick="ha_click"
                     app:backgroundTint="@null" />
 
                 <Button
@@ -345,6 +371,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/hir_hi"
                     android:textSize="10sp"
+                    android:onClick="hi_click"
                     app:backgroundTint="@null" />
 
                 <Button
@@ -355,6 +382,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/hir_fu"
                     android:textSize="10sp"
+                    android:onClick="fu_click"
                     app:backgroundTint="@null" />
 
                 <Button
@@ -365,6 +393,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/hir_he"
                     android:textSize="10sp"
+                    android:onClick="he_click"
                     app:backgroundTint="@null" />
 
                 <Button
@@ -375,6 +404,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/hir_ho"
                     android:textSize="10sp"
+                    android:onClick="ho_click"
                     app:backgroundTint="@null" />
 
             </LinearLayout>
@@ -393,6 +423,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/hir_ma"
                     android:textSize="10sp"
+                    android:onClick="ma_click"
                     app:backgroundTint="@null" />
 
                 <Button
@@ -403,6 +434,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/hir_mi"
                     android:textSize="10sp"
+                    android:onClick="mi_click"
                     app:backgroundTint="@null" />
 
                 <Button
@@ -413,6 +445,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/hir_mu"
                     android:textSize="10sp"
+                    android:onClick="mu_click"
                     app:backgroundTint="@null" />
 
                 <Button
@@ -423,6 +456,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/hir_me"
                     android:textSize="10sp"
+                    android:onClick="me_click"
                     app:backgroundTint="@null" />
 
                 <Button
@@ -433,6 +467,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/hir_mo"
                     android:textSize="10sp"
+                    android:onClick="mo_click"
                     app:backgroundTint="@null" />
 
             </LinearLayout>
@@ -451,6 +486,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/hir_ya"
                     android:textSize="10sp"
+                    android:onClick="ya_click"
                     app:backgroundTint="@null" />
 
                 <Button
@@ -462,6 +498,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/hir_yu"
                     android:textSize="10sp"
+                    android:onClick="yu_click"
                     app:backgroundTint="@null" />
 
                 <Button
@@ -473,6 +510,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/hir_yo"
                     android:textSize="10sp"
+                    android:onClick="yo_click"
                     app:backgroundTint="@null" />
 
             </LinearLayout>
@@ -491,6 +529,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/hir_ra"
                     android:textSize="10sp"
+                    android:onClick="ra_click"
                     app:backgroundTint="@null" />
 
                 <Button
@@ -501,6 +540,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/hir_ri"
                     android:textSize="10sp"
+                    android:onClick="ri_click"
                     app:backgroundTint="@null" />
 
                 <Button
@@ -511,6 +551,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/hir_ru"
                     android:textSize="10sp"
+                    android:onClick="ru_click"
                     app:backgroundTint="@null" />
 
                 <Button
@@ -521,6 +562,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/hir_re"
                     android:textSize="10sp"
+                    android:onClick="re_click"
                     app:backgroundTint="@null" />
 
                 <Button
@@ -531,6 +573,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/hir_ro"
                     android:textSize="10sp"
+                    android:onClick="ro_click"
                     app:backgroundTint="@null" />
 
             </LinearLayout>
@@ -549,6 +592,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/hir_wa"
                     android:textSize="10sp"
+                    android:onClick="wa_click"
                     app:backgroundTint="@null" />
 
 
@@ -561,6 +605,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/hir_wo"
                     android:textSize="10sp"
+                    android:onClick="wo_click"
                     app:backgroundTint="@null" />
 
             </LinearLayout>
@@ -579,6 +624,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/hir_n"
                     android:textSize="10sp"
+                    android:onClick="n_click"
                     app:backgroundTint="@null" />
 
             </LinearLayout>
@@ -597,7 +643,7 @@
 
         android:backgroundTint="#32FFFFFF"
         android:orientation="vertical"
-        android:visibility="visible"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -623,6 +669,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/kat_a"
                     android:textSize="10sp"
+                    android:onClick="a_click"
                     app:backgroundTint="@null" />
 
                 <Button
@@ -633,6 +680,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/kat_i"
                     android:textSize="10sp"
+                    android:onClick="i_click"
                     app:backgroundTint="@null" />
 
                 <Button
@@ -643,6 +691,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/kat_u"
                     android:textSize="10sp"
+                    android:onClick="u_click"
                     app:backgroundTint="@null" />
 
                 <Button
@@ -653,6 +702,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/kat_e"
                     android:textSize="10sp"
+                    android:onClick="e_click"
                     app:backgroundTint="@null" />
 
                 <Button
@@ -663,6 +713,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/kat_o"
                     android:textSize="10sp"
+                    android:onClick="o_click"
                     app:backgroundTint="@null" />
 
             </LinearLayout>
@@ -681,6 +732,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/kat_ka"
                     android:textSize="10sp"
+                    android:onClick="ka_click"
                     app:backgroundTint="@null" />
 
                 <Button
@@ -691,6 +743,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/kat_ki"
                     android:textSize="10sp"
+                    android:onClick="ki_click"
                     app:backgroundTint="@null" />
 
                 <Button
@@ -701,6 +754,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/kat_ku"
                     android:textSize="10sp"
+                    android:onClick="ku_click"
                     app:backgroundTint="@null" />
 
                 <Button
@@ -711,6 +765,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/kat_ke"
                     android:textSize="10sp"
+                    android:onClick="ke_click"
                     app:backgroundTint="@null" />
 
                 <Button
@@ -721,6 +776,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/kat_ko"
                     android:textSize="10sp"
+                    android:onClick="ko_click"
                     app:backgroundTint="@null" />
 
             </LinearLayout>
@@ -739,6 +795,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/kat_sa"
                     android:textSize="10sp"
+                    android:onClick="sa_click"
                     app:backgroundTint="@null" />
 
                 <Button
@@ -749,6 +806,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/kat_shi"
                     android:textSize="10sp"
+                    android:onClick="shi_click"
                     app:backgroundTint="@null" />
 
                 <Button
@@ -759,6 +817,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/kat_su"
                     android:textSize="10sp"
+                    android:onClick="su_click"
                     app:backgroundTint="@null" />
 
                 <Button
@@ -769,6 +828,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/kat_se"
                     android:textSize="10sp"
+                    android:onClick="se_click"
                     app:backgroundTint="@null" />
 
                 <Button
@@ -779,6 +839,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/kat_so"
                     android:textSize="10sp"
+                    android:onClick="so_click"
                     app:backgroundTint="@null" />
 
             </LinearLayout>
@@ -797,6 +858,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/kat_ta"
                     android:textSize="10sp"
+                    android:onClick="ta_click"
                     app:backgroundTint="@null" />
 
                 <Button
@@ -807,6 +869,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/kat_chi"
                     android:textSize="10sp"
+                    android:onClick="chi_click"
                     app:backgroundTint="@null" />
 
                 <Button
@@ -817,6 +880,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/kat_tsu"
                     android:textSize="10sp"
+                    android:onClick="tsu_click"
                     app:backgroundTint="@null" />
 
                 <Button
@@ -827,6 +891,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/kat_te"
                     android:textSize="10sp"
+                    android:onClick="te_click"
                     app:backgroundTint="@null" />
 
                 <Button
@@ -837,6 +902,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/kat_to"
                     android:textSize="10sp"
+                    android:onClick="to_click"
                     app:backgroundTint="@null" />
 
             </LinearLayout>
@@ -855,6 +921,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/kat_na"
                     android:textSize="10sp"
+                    android:onClick="na_click"
                     app:backgroundTint="@null" />
 
                 <Button
@@ -865,6 +932,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/kat_ni"
                     android:textSize="10sp"
+                    android:onClick="ni_click"
                     app:backgroundTint="@null" />
 
                 <Button
@@ -875,6 +943,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/kat_nu"
                     android:textSize="10sp"
+                    android:onClick="nu_click"
                     app:backgroundTint="@null" />
 
                 <Button
@@ -885,6 +954,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/kat_ne"
                     android:textSize="10sp"
+                    android:onClick="ne_click"
                     app:backgroundTint="@null" />
 
                 <Button
@@ -895,6 +965,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/kat_no"
                     android:textSize="10sp"
+                    android:onClick="no_click"
                     app:backgroundTint="@null" />
 
             </LinearLayout>
@@ -913,6 +984,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/kat_ha"
                     android:textSize="10sp"
+                    android:onClick="ha_click"
                     app:backgroundTint="@null" />
 
                 <Button
@@ -923,6 +995,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/kat_hi"
                     android:textSize="10sp"
+                    android:onClick="hi_click"
                     app:backgroundTint="@null" />
 
                 <Button
@@ -933,6 +1006,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/kat_fu"
                     android:textSize="10sp"
+                    android:onClick="fu_click"
                     app:backgroundTint="@null" />
 
                 <Button
@@ -943,6 +1017,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/kat_he"
                     android:textSize="10sp"
+                    android:onClick="he_click"
                     app:backgroundTint="@null" />
 
                 <Button
@@ -953,6 +1028,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/kat_ho"
                     android:textSize="10sp"
+                    android:onClick="ho_click"
                     app:backgroundTint="@null" />
 
             </LinearLayout>
@@ -971,6 +1047,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/kat_ma"
                     android:textSize="10sp"
+                    android:onClick="ma_click"
                     app:backgroundTint="@null" />
 
                 <Button
@@ -981,6 +1058,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/kat_mi"
                     android:textSize="10sp"
+                    android:onClick="mi_click"
                     app:backgroundTint="@null" />
 
                 <Button
@@ -991,6 +1069,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/kat_mu"
                     android:textSize="10sp"
+                    android:onClick="mu_click"
                     app:backgroundTint="@null" />
 
                 <Button
@@ -1001,6 +1080,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/kat_me"
                     android:textSize="10sp"
+                    android:onClick="me_click"
                     app:backgroundTint="@null" />
 
                 <Button
@@ -1011,6 +1091,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/kat_mo"
                     android:textSize="10sp"
+                    android:onClick="mo_click"
                     app:backgroundTint="@null" />
 
             </LinearLayout>
@@ -1029,6 +1110,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/kat_ya"
                     android:textSize="10sp"
+                    android:onClick="ya_click"
                     app:backgroundTint="@null" />
 
                 <Button
@@ -1040,6 +1122,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/kat_yu"
                     android:textSize="10sp"
+                    android:onClick="yu_click"
                     app:backgroundTint="@null" />
 
                 <Button
@@ -1051,6 +1134,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/kat_yo"
                     android:textSize="10sp"
+                    android:onClick="yo_click"
                     app:backgroundTint="@null" />
 
             </LinearLayout>
@@ -1069,6 +1153,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/kat_ra"
                     android:textSize="10sp"
+                    android:onClick="ra_click"
                     app:backgroundTint="@null" />
 
                 <Button
@@ -1079,6 +1164,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/kat_ri"
                     android:textSize="10sp"
+                    android:onClick="ri_click"
                     app:backgroundTint="@null" />
 
                 <Button
@@ -1089,6 +1175,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/kat_ru"
                     android:textSize="10sp"
+                    android:onClick="ru_click"
                     app:backgroundTint="@null" />
 
                 <Button
@@ -1099,6 +1186,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/kat_re"
                     android:textSize="10sp"
+                    android:onClick="re_click"
                     app:backgroundTint="@null" />
 
                 <Button
@@ -1109,6 +1197,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/kat_ro"
                     android:textSize="10sp"
+                    android:onClick="ro_click"
                     app:backgroundTint="@null" />
 
             </LinearLayout>
@@ -1127,6 +1216,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/kat_wa"
                     android:textSize="10sp"
+                    android:onClick="wa_click"
                     app:backgroundTint="@null" />
 
 
@@ -1139,6 +1229,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/kat_wo"
                     android:textSize="10sp"
+                    android:onClick="wo_click"
                     app:backgroundTint="@null" />
 
             </LinearLayout>
@@ -1157,6 +1248,7 @@
                     android:backgroundTint="@null"
                     android:text="@string/kat_n"
                     android:textSize="10sp"
+                    android:onClick="no_click"
                     app:backgroundTint="@null" />
 
             </LinearLayout>
@@ -1168,11 +1260,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
-        android:layout_marginBottom="80dp"
+        android:layout_marginBottom="30dp"
         android:background="@drawable/button_bg"
         android:backgroundTint="@null"
         android:text="Hiragana"
         android:textSize="10sp"
+        android:onClick="hiragana_onClick"
         app:backgroundTint="@null"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -1184,12 +1277,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="60dp"
-        android:layout_marginBottom="80dp"
+        android:layout_marginBottom="30dp"
         android:background="@drawable/button_bg"
         android:backgroundTint="@null"
         android:backgroundTintMode="@null"
         android:text="Katakana"
         android:textSize="10sp"
+        android:onClick="katakana_onClick"
         app:backgroundTint="@null"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
