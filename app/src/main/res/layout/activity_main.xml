@@ -2,94 +2,102 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
-    android:backgroundTint="#5F98C3"
+    android:background="@drawable/day"
+    android:visibility="visible"
     tools:context=".MainActivity">
 
     <ScrollView
         android:id="@+id/hiragana_board"
         android:layout_width="wrap_content"
-        android:layout_height="500dp"
+        android:layout_height="430dp"
         android:layout_gravity="center_vertical"
-        android:layout_marginTop="80dp"
-        android:layout_marginBottom="150dp"
+        android:layout_marginBottom="120dp"
+         
         android:background="@drawable/button_bg"
-
-        android:backgroundTint="#32FFFFFF"
+        android:backgroundTint="#00FFFFFF"
         android:orientation="vertical"
         android:visibility="visible"
+        app:backgroundTint="@null"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/board_name">
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+
             <LinearLayout
                 android:id="@+id/hiragana_line1"
                 android:layout_width="match_parent"
-
                 android:layout_height="wrap_content"
+                android:backgroundTint="#D0FFFFFF"
                 android:orientation="horizontal">
 
                 <Button
                     android:id="@+id/hira_a"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
                     android:background="@drawable/button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/hir_a"
-                    android:textSize="10sp"
                     android:onClick="a_click"
+                    android:text="@string/hir_a"
+                    android:textColor="@color/hira_text"
+                    android:textSize="12sp"
+
                     app:backgroundTint="@null" />
 
                 <Button
                     android:id="@+id/hira_i"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
                     android:background="@drawable/button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/hir_i"
-                    android:textSize="10sp"
                     android:onClick="i_click"
+                    android:text="@string/hir_i"
+                    android:textColor="@color/hira_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
                 <Button
                     android:id="@+id/hira_u"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
                     android:background="@drawable/button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/hir_u"
-                    android:textSize="10sp"
                     android:onClick="u_click"
+                    android:text="@string/hir_u"
+                    android:textColor="@color/hira_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
                 <Button
                     android:id="@+id/hira_e"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
                     android:background="@drawable/button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/hir_e"
-                    android:textSize="10sp"
                     android:onClick="e_click"
+                    android:text="@string/hir_e"
+                    android:textColor="@color/hira_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
                 <Button
                     android:id="@+id/hira_o"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
                     android:background="@drawable/button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/hir_o"
-                    android:textSize="10sp"
                     android:onClick="o_click"
+                    android:text="@string/hir_o"
+                    android:textColor="@color/hira_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
             </LinearLayout>
@@ -102,57 +110,62 @@
 
                 <Button
                     android:id="@+id/hira_ka"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
                     android:background="@drawable/button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/hir_ka"
-                    android:textSize="10sp"
                     android:onClick="ka_click"
+                    android:text="@string/hir_ka"
+                    android:textColor="@color/hira_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
                 <Button
                     android:id="@+id/hira_ki"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
                     android:background="@drawable/button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/hir_ki"
-                    android:textSize="10sp"
                     android:onClick="ki_click"
+                    android:text="@string/hir_ki"
+                    android:textColor="@color/hira_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
                 <Button
                     android:id="@+id/hira_ku"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
                     android:background="@drawable/button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/hir_ku"
-                    android:textSize="10sp"
                     android:onClick="ku_click"
+                    android:text="@string/hir_ku"
+                    android:textColor="@color/hira_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
                 <Button
                     android:id="@+id/hira_ke"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
                     android:background="@drawable/button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/hir_ke"
-                    android:textSize="10sp"
                     android:onClick="ke_click"
+                    android:text="@string/hir_ke"
+                    android:textColor="@color/hira_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
                 <Button
                     android:id="@+id/hira_ko"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
                     android:background="@drawable/button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/hir_ko"
-                    android:textSize="10sp"
                     android:onClick="ko_click"
+                    android:text="@string/hir_ko"
+                    android:textColor="@color/hira_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
             </LinearLayout>
@@ -165,57 +178,62 @@
 
                 <Button
                     android:id="@+id/hira_sa"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
                     android:background="@drawable/button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/hir_sa"
-                    android:textSize="10sp"
                     android:onClick="sa_click"
+                    android:text="@string/hir_sa"
+                    android:textColor="@color/hira_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
                 <Button
                     android:id="@+id/hira_shi"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
                     android:background="@drawable/button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/hir_shi"
-                    android:textSize="10sp"
                     android:onClick="shi_click"
+                    android:text="@string/hir_shi"
+                    android:textColor="@color/hira_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
                 <Button
                     android:id="@+id/hira_su"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
                     android:background="@drawable/button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/hir_su"
-                    android:textSize="10sp"
                     android:onClick="su_click"
+                    android:text="@string/hir_su"
+                    android:textColor="@color/hira_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
                 <Button
                     android:id="@+id/hira_se"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
                     android:background="@drawable/button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/hir_se"
-                    android:textSize="10sp"
                     android:onClick="se_click"
+                    android:text="@string/hir_se"
+                    android:textColor="@color/hira_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
                 <Button
                     android:id="@+id/hira_so"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
                     android:background="@drawable/button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/hir_so"
-                    android:textSize="10sp"
                     android:onClick="so_click"
+                    android:text="@string/hir_so"
+                    android:textColor="@color/hira_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
             </LinearLayout>
@@ -228,57 +246,62 @@
 
                 <Button
                     android:id="@+id/hira_ta"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
                     android:background="@drawable/button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/hir_ta"
-                    android:textSize="10sp"
                     android:onClick="ta_click"
+                    android:text="@string/hir_ta"
+                    android:textColor="@color/hira_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
                 <Button
                     android:id="@+id/hira_chi"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
                     android:background="@drawable/button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/hir_chi"
-                    android:textSize="10sp"
                     android:onClick="chi_click"
+                    android:text="@string/hir_chi"
+                    android:textColor="@color/hira_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
                 <Button
                     android:id="@+id/hira_tsu"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
                     android:background="@drawable/button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/hir_tsu"
-                    android:textSize="10sp"
                     android:onClick="tsu_click"
+                    android:text="@string/hir_tsu"
+                    android:textColor="@color/hira_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
                 <Button
                     android:id="@+id/hira_te"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
                     android:background="@drawable/button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/hir_te"
-                    android:textSize="10sp"
                     android:onClick="te_click"
+                    android:text="@string/hir_te"
+                    android:textColor="@color/hira_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
                 <Button
                     android:id="@+id/hira_to"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
                     android:background="@drawable/button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/hir_to"
-                    android:textSize="10sp"
                     android:onClick="to_click"
+                    android:text="@string/hir_to"
+                    android:textColor="@color/hira_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
             </LinearLayout>
@@ -291,57 +314,62 @@
 
                 <Button
                     android:id="@+id/hira_na"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
                     android:background="@drawable/button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/hir_na"
-                    android:textSize="10sp"
                     android:onClick="na_click"
+                    android:text="@string/hir_na"
+                    android:textColor="@color/hira_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
                 <Button
                     android:id="@+id/hira_ni"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
                     android:background="@drawable/button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/hir_ni"
-                    android:textSize="10sp"
                     android:onClick="ni_click"
+                    android:text="@string/hir_ni"
+                    android:textColor="@color/hira_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
                 <Button
                     android:id="@+id/hira_nu"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
                     android:background="@drawable/button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/hir_nu"
-                    android:textSize="10sp"
                     android:onClick="nu_click"
+                    android:text="@string/hir_nu"
+                    android:textColor="@color/hira_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
                 <Button
                     android:id="@+id/hira_ne"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
                     android:background="@drawable/button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/hir_ne"
-                    android:textSize="10sp"
                     android:onClick="ne_click"
+                    android:text="@string/hir_ne"
+                    android:textColor="@color/hira_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
                 <Button
                     android:id="@+id/hira_no"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
                     android:background="@drawable/button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/hir_no"
-                    android:textSize="10sp"
                     android:onClick="no_click"
+                    android:text="@string/hir_no"
+                    android:textColor="@color/hira_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
             </LinearLayout>
@@ -354,57 +382,62 @@
 
                 <Button
                     android:id="@+id/hira_ha"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
                     android:background="@drawable/button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/hir_ha"
-                    android:textSize="10sp"
                     android:onClick="ha_click"
+                    android:text="@string/hir_ha"
+                    android:textColor="@color/hira_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
                 <Button
                     android:id="@+id/hira_hi"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
                     android:background="@drawable/button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/hir_hi"
-                    android:textSize="10sp"
                     android:onClick="hi_click"
+                    android:text="@string/hir_hi"
+                    android:textColor="@color/hira_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
                 <Button
                     android:id="@+id/hira_fu"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
                     android:background="@drawable/button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/hir_fu"
-                    android:textSize="10sp"
                     android:onClick="fu_click"
+                    android:text="@string/hir_fu"
+                    android:textColor="@color/hira_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
                 <Button
                     android:id="@+id/hira_he"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
                     android:background="@drawable/button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/hir_he"
-                    android:textSize="10sp"
                     android:onClick="he_click"
+                    android:text="@string/hir_he"
+                    android:textColor="@color/hira_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
                 <Button
                     android:id="@+id/hira_ho"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
                     android:background="@drawable/button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/hir_ho"
-                    android:textSize="10sp"
                     android:onClick="ho_click"
+                    android:text="@string/hir_ho"
+                    android:textColor="@color/hira_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
             </LinearLayout>
@@ -417,57 +450,62 @@
 
                 <Button
                     android:id="@+id/hira_ma"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
                     android:background="@drawable/button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/hir_ma"
-                    android:textSize="10sp"
                     android:onClick="ma_click"
+                    android:text="@string/hir_ma"
+                    android:textColor="@color/hira_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
                 <Button
                     android:id="@+id/hira_mi"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
                     android:background="@drawable/button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/hir_mi"
-                    android:textSize="10sp"
                     android:onClick="mi_click"
+                    android:text="@string/hir_mi"
+                    android:textColor="@color/hira_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
                 <Button
                     android:id="@+id/hira_mu"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
                     android:background="@drawable/button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/hir_mu"
-                    android:textSize="10sp"
                     android:onClick="mu_click"
+                    android:text="@string/hir_mu"
+                    android:textColor="@color/hira_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
                 <Button
                     android:id="@+id/hira_me"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
                     android:background="@drawable/button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/hir_me"
-                    android:textSize="10sp"
                     android:onClick="me_click"
+                    android:text="@string/hir_me"
+                    android:textColor="@color/hira_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
                 <Button
                     android:id="@+id/hira_mo"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
                     android:background="@drawable/button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/hir_mo"
-                    android:textSize="10sp"
                     android:onClick="mo_click"
+                    android:text="@string/hir_mo"
+                    android:textColor="@color/hira_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
             </LinearLayout>
@@ -480,37 +518,40 @@
 
                 <Button
                     android:id="@+id/hira_ya"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
                     android:background="@drawable/button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/hir_ya"
-                    android:textSize="10sp"
                     android:onClick="ya_click"
+                    android:text="@string/hir_ya"
+                    android:textColor="@color/hira_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
                 <Button
                     android:id="@+id/hira_yu"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="60dp"
+                    android:layout_marginLeft="67dp"
                     android:background="@drawable/button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/hir_yu"
-                    android:textSize="10sp"
                     android:onClick="yu_click"
+                    android:text="@string/hir_yu"
+                    android:textColor="@color/hira_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
                 <Button
                     android:id="@+id/hira_yo"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="60dp"
+                    android:layout_marginLeft="67dp"
                     android:background="@drawable/button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/hir_yo"
-                    android:textSize="10sp"
                     android:onClick="yo_click"
+                    android:text="@string/hir_yo"
+                    android:textColor="@color/hira_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
             </LinearLayout>
@@ -523,57 +564,62 @@
 
                 <Button
                     android:id="@+id/hira_ra"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
                     android:background="@drawable/button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/hir_ra"
-                    android:textSize="10sp"
                     android:onClick="ra_click"
+                    android:text="@string/hir_ra"
+                    android:textColor="@color/hira_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
                 <Button
                     android:id="@+id/hira_ri"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
                     android:background="@drawable/button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/hir_ri"
-                    android:textSize="10sp"
                     android:onClick="ri_click"
+                    android:text="@string/hir_ri"
+                    android:textColor="@color/hira_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
                 <Button
                     android:id="@+id/hira_ru"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
                     android:background="@drawable/button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/hir_ru"
-                    android:textSize="10sp"
                     android:onClick="ru_click"
+                    android:text="@string/hir_ru"
+                    android:textColor="@color/hira_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
                 <Button
                     android:id="@+id/hira_re"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
                     android:background="@drawable/button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/hir_re"
-                    android:textSize="10sp"
                     android:onClick="re_click"
+                    android:text="@string/hir_re"
+                    android:textColor="@color/hira_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
                 <Button
                     android:id="@+id/hira_ro"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
                     android:background="@drawable/button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/hir_ro"
-                    android:textSize="10sp"
                     android:onClick="ro_click"
+                    android:text="@string/hir_ro"
+                    android:textColor="@color/hira_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
             </LinearLayout>
@@ -586,26 +632,28 @@
 
                 <Button
                     android:id="@+id/hira_wa"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
                     android:background="@drawable/button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/hir_wa"
-                    android:textSize="10sp"
                     android:onClick="wa_click"
+                    android:text="@string/hir_wa"
+                    android:textColor="@color/hira_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
 
                 <Button
                     android:id="@+id/hira_wo"
-                    android:layout_width="60dp"
+                    android:layout_width="62dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="180dp"
+                    android:layout_marginLeft="201dp"
                     android:background="@drawable/button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/hir_wo"
-                    android:textSize="10sp"
                     android:onClick="wo_click"
+                    android:text="@string/hir_wo"
+                    android:textColor="@color/hira_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
             </LinearLayout>
@@ -618,13 +666,14 @@
 
                 <Button
                     android:id="@+id/hira_n"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
                     android:background="@drawable/button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/hir_n"
-                    android:textSize="10sp"
                     android:onClick="n_click"
+                    android:text="@string/hir_n"
+                    android:textColor="@color/hira_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
             </LinearLayout>
@@ -635,19 +684,18 @@
     <ScrollView
         android:id="@+id/katakana_board"
         android:layout_width="wrap_content"
-        android:layout_height="500dp"
+        android:layout_height="430dp"
         android:layout_gravity="center_vertical"
-        android:layout_marginTop="80dp"
-        android:layout_marginBottom="150dp"
-        android:background="@drawable/button_bg"
-
+        android:layout_marginBottom="120dp"
+        android:background="@drawable/kata_button_bg"
         android:backgroundTint="#32FFFFFF"
         android:orientation="vertical"
-        android:visibility="gone"
+        android:visibility="invisible"
+        android:alpha="0"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/board_name">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -657,63 +705,67 @@
             <LinearLayout
                 android:id="@+id/katakana_line1"
                 android:layout_width="match_parent"
-
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
                 <Button
                     android:id="@+id/kata_a"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/button_bg"
+                    android:background="@drawable/kata_button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/kat_a"
-                    android:textSize="10sp"
                     android:onClick="a_click"
+                    android:text="@string/kat_a"
+                    android:textColor="@color/kata_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
                 <Button
                     android:id="@+id/kata_i"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/button_bg"
+                    android:background="@drawable/kata_button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/kat_i"
-                    android:textSize="10sp"
                     android:onClick="i_click"
+                    android:text="@string/kat_i"
+                    android:textColor="@color/kata_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
                 <Button
                     android:id="@+id/kata_u"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/button_bg"
+                    android:background="@drawable/kata_button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/kat_u"
-                    android:textSize="10sp"
                     android:onClick="u_click"
+                    android:text="@string/kat_u"
+                    android:textColor="@color/kata_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
                 <Button
                     android:id="@+id/kata_e"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/button_bg"
+                    android:background="@drawable/kata_button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/kat_e"
-                    android:textSize="10sp"
                     android:onClick="e_click"
+                    android:text="@string/kat_e"
+                    android:textColor="@color/kata_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
                 <Button
                     android:id="@+id/kata_o"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/button_bg"
+                    android:background="@drawable/kata_button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/kat_o"
-                    android:textSize="10sp"
                     android:onClick="o_click"
+                    android:text="@string/kat_o"
+                    android:textColor="@color/kata_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
             </LinearLayout>
@@ -726,57 +778,62 @@
 
                 <Button
                     android:id="@+id/kata_ka"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/button_bg"
+                    android:background="@drawable/kata_button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/kat_ka"
-                    android:textSize="10sp"
                     android:onClick="ka_click"
+                    android:text="@string/kat_ka"
+                    android:textColor="@color/kata_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
                 <Button
                     android:id="@+id/kata_ki"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/button_bg"
+                    android:background="@drawable/kata_button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/kat_ki"
-                    android:textSize="10sp"
                     android:onClick="ki_click"
+                    android:text="@string/kat_ki"
+                    android:textColor="@color/kata_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
                 <Button
                     android:id="@+id/kata_ku"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/button_bg"
+                    android:background="@drawable/kata_button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/kat_ku"
-                    android:textSize="10sp"
                     android:onClick="ku_click"
+                    android:text="@string/kat_ku"
+                    android:textColor="@color/kata_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
                 <Button
                     android:id="@+id/kata_ke"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/button_bg"
+                    android:background="@drawable/kata_button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/kat_ke"
-                    android:textSize="10sp"
                     android:onClick="ke_click"
+                    android:text="@string/kat_ke"
+                    android:textColor="@color/kata_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
                 <Button
                     android:id="@+id/kata_ko"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/button_bg"
+                    android:background="@drawable/kata_button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/kat_ko"
-                    android:textSize="10sp"
                     android:onClick="ko_click"
+                    android:text="@string/kat_ko"
+                    android:textColor="@color/kata_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
             </LinearLayout>
@@ -789,57 +846,62 @@
 
                 <Button
                     android:id="@+id/kata_sa"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/button_bg"
+                    android:background="@drawable/kata_button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/kat_sa"
-                    android:textSize="10sp"
                     android:onClick="sa_click"
+                    android:text="@string/kat_sa"
+                    android:textColor="@color/kata_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
                 <Button
                     android:id="@+id/kata_shi"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/button_bg"
+                    android:background="@drawable/kata_button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/kat_shi"
-                    android:textSize="10sp"
                     android:onClick="shi_click"
+                    android:text="@string/kat_shi"
+                    android:textColor="@color/kata_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
                 <Button
                     android:id="@+id/kata_su"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/button_bg"
+                    android:background="@drawable/kata_button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/kat_su"
-                    android:textSize="10sp"
                     android:onClick="su_click"
+                    android:text="@string/kat_su"
+                    android:textColor="@color/kata_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
                 <Button
                     android:id="@+id/kata_se"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/button_bg"
+                    android:background="@drawable/kata_button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/kat_se"
-                    android:textSize="10sp"
                     android:onClick="se_click"
+                    android:text="@string/kat_se"
+                    android:textColor="@color/kata_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
                 <Button
                     android:id="@+id/kata_so"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/button_bg"
+                    android:background="@drawable/kata_button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/kat_so"
-                    android:textSize="10sp"
                     android:onClick="so_click"
+                    android:text="@string/kat_so"
+                    android:textColor="@color/kata_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
             </LinearLayout>
@@ -852,57 +914,62 @@
 
                 <Button
                     android:id="@+id/kata_ta"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/button_bg"
+                    android:background="@drawable/kata_button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/kat_ta"
-                    android:textSize="10sp"
                     android:onClick="ta_click"
+                    android:text="@string/kat_ta"
+                    android:textColor="@color/kata_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
                 <Button
                     android:id="@+id/kata_chi"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/button_bg"
+                    android:background="@drawable/kata_button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/kat_chi"
-                    android:textSize="10sp"
                     android:onClick="chi_click"
+                    android:text="@string/kat_chi"
+                    android:textColor="@color/kata_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
                 <Button
                     android:id="@+id/kata_tsu"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/button_bg"
+                    android:background="@drawable/kata_button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/kat_tsu"
-                    android:textSize="10sp"
                     android:onClick="tsu_click"
+                    android:text="@string/kat_tsu"
+                    android:textColor="@color/kata_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
                 <Button
                     android:id="@+id/kata_te"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/button_bg"
+                    android:background="@drawable/kata_button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/kat_te"
-                    android:textSize="10sp"
                     android:onClick="te_click"
+                    android:text="@string/kat_te"
+                    android:textColor="@color/kata_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
                 <Button
                     android:id="@+id/kata_to"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/button_bg"
+                    android:background="@drawable/kata_button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/kat_to"
-                    android:textSize="10sp"
                     android:onClick="to_click"
+                    android:text="@string/kat_to"
+                    android:textColor="@color/kata_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
             </LinearLayout>
@@ -915,57 +982,62 @@
 
                 <Button
                     android:id="@+id/kata_na"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/button_bg"
+                    android:background="@drawable/kata_button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/kat_na"
-                    android:textSize="10sp"
                     android:onClick="na_click"
+                    android:text="@string/kat_na"
+                    android:textColor="@color/kata_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
                 <Button
                     android:id="@+id/kata_ni"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/button_bg"
+                    android:background="@drawable/kata_button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/kat_ni"
-                    android:textSize="10sp"
                     android:onClick="ni_click"
+                    android:text="@string/kat_ni"
+                    android:textColor="@color/kata_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
                 <Button
                     android:id="@+id/kata_nu"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/button_bg"
+                    android:background="@drawable/kata_button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/kat_nu"
-                    android:textSize="10sp"
                     android:onClick="nu_click"
+                    android:text="@string/kat_nu"
+                    android:textColor="@color/kata_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
                 <Button
                     android:id="@+id/kata_ne"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/button_bg"
+                    android:background="@drawable/kata_button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/kat_ne"
-                    android:textSize="10sp"
                     android:onClick="ne_click"
+                    android:text="@string/kat_ne"
+                    android:textColor="@color/kata_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
                 <Button
                     android:id="@+id/kata_no"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/button_bg"
+                    android:background="@drawable/kata_button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/kat_no"
-                    android:textSize="10sp"
                     android:onClick="no_click"
+                    android:text="@string/kat_no"
+                    android:textColor="@color/kata_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
             </LinearLayout>
@@ -978,57 +1050,62 @@
 
                 <Button
                     android:id="@+id/kata_ha"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/button_bg"
+                    android:background="@drawable/kata_button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/kat_ha"
-                    android:textSize="10sp"
                     android:onClick="ha_click"
+                    android:text="@string/kat_ha"
+                    android:textColor="@color/kata_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
                 <Button
                     android:id="@+id/kata_hi"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/button_bg"
+                    android:background="@drawable/kata_button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/kat_hi"
-                    android:textSize="10sp"
                     android:onClick="hi_click"
+                    android:text="@string/kat_hi"
+                    android:textColor="@color/kata_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
                 <Button
                     android:id="@+id/kata_fu"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/button_bg"
+                    android:background="@drawable/kata_button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/kat_fu"
-                    android:textSize="10sp"
                     android:onClick="fu_click"
+                    android:text="@string/kat_fu"
+                    android:textColor="@color/kata_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
                 <Button
                     android:id="@+id/kata_he"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/button_bg"
+                    android:background="@drawable/kata_button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/kat_he"
-                    android:textSize="10sp"
                     android:onClick="he_click"
+                    android:text="@string/kat_he"
+                    android:textColor="@color/kata_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
                 <Button
                     android:id="@+id/kata_ho"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/button_bg"
+                    android:background="@drawable/kata_button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/kat_ho"
-                    android:textSize="10sp"
                     android:onClick="ho_click"
+                    android:text="@string/kat_ho"
+                    android:textColor="@color/kata_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
             </LinearLayout>
@@ -1041,57 +1118,62 @@
 
                 <Button
                     android:id="@+id/kata_ma"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/button_bg"
+                    android:background="@drawable/kata_button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/kat_ma"
-                    android:textSize="10sp"
                     android:onClick="ma_click"
+                    android:text="@string/kat_ma"
+                    android:textColor="@color/kata_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
                 <Button
                     android:id="@+id/kata_mi"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/button_bg"
+                    android:background="@drawable/kata_button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/kat_mi"
-                    android:textSize="10sp"
                     android:onClick="mi_click"
+                    android:text="@string/kat_mi"
+                    android:textColor="@color/kata_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
                 <Button
                     android:id="@+id/kata_mu"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/button_bg"
+                    android:background="@drawable/kata_button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/kat_mu"
-                    android:textSize="10sp"
                     android:onClick="mu_click"
+                    android:text="@string/kat_mu"
+                    android:textColor="@color/kata_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
                 <Button
                     android:id="@+id/kata_me"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/button_bg"
+                    android:background="@drawable/kata_button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/kat_me"
-                    android:textSize="10sp"
                     android:onClick="me_click"
+                    android:text="@string/kat_me"
+                    android:textColor="@color/kata_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
                 <Button
                     android:id="@+id/kata_mo"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/button_bg"
+                    android:background="@drawable/kata_button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/kat_mo"
-                    android:textSize="10sp"
                     android:onClick="mo_click"
+                    android:text="@string/kat_mo"
+                    android:textColor="@color/kata_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
             </LinearLayout>
@@ -1104,37 +1186,40 @@
 
                 <Button
                     android:id="@+id/kata_ya"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/button_bg"
+                    android:background="@drawable/kata_button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/kat_ya"
-                    android:textSize="10sp"
                     android:onClick="ya_click"
+                    android:text="@string/kat_ya"
+                    android:textColor="@color/kata_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
                 <Button
                     android:id="@+id/kata_yu"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="60dp"
-                    android:background="@drawable/button_bg"
+                    android:layout_marginLeft="67dp"
+                    android:background="@drawable/kata_button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/kat_yu"
-                    android:textSize="10sp"
                     android:onClick="yu_click"
+                    android:text="@string/kat_yu"
+                    android:textColor="@color/kata_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
                 <Button
                     android:id="@+id/kata_yo"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="60dp"
-                    android:background="@drawable/button_bg"
+                    android:layout_marginLeft="67dp"
+                    android:background="@drawable/kata_button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/kat_yo"
-                    android:textSize="10sp"
                     android:onClick="yo_click"
+                    android:text="@string/kat_yo"
+                    android:textColor="@color/kata_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
             </LinearLayout>
@@ -1147,57 +1232,62 @@
 
                 <Button
                     android:id="@+id/kata_ra"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/button_bg"
+                    android:background="@drawable/kata_button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/kat_ra"
-                    android:textSize="10sp"
                     android:onClick="ra_click"
+                    android:text="@string/kat_ra"
+                    android:textColor="@color/kata_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
                 <Button
                     android:id="@+id/kata_ri"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/button_bg"
+                    android:background="@drawable/kata_button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/kat_ri"
-                    android:textSize="10sp"
                     android:onClick="ri_click"
+                    android:text="@string/kat_ri"
+                    android:textColor="@color/kata_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
                 <Button
                     android:id="@+id/kata_ru"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/button_bg"
+                    android:background="@drawable/kata_button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/kat_ru"
-                    android:textSize="10sp"
                     android:onClick="ru_click"
+                    android:text="@string/kat_ru"
+                    android:textColor="@color/kata_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
                 <Button
                     android:id="@+id/kata_re"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/button_bg"
+                    android:background="@drawable/kata_button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/kat_re"
-                    android:textSize="10sp"
                     android:onClick="re_click"
+                    android:text="@string/kat_re"
+                    android:textColor="@color/kata_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
                 <Button
                     android:id="@+id/kata_ro"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/button_bg"
+                    android:background="@drawable/kata_button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/kat_ro"
-                    android:textSize="10sp"
                     android:onClick="ro_click"
+                    android:text="@string/kat_ro"
+                    android:textColor="@color/kata_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
             </LinearLayout>
@@ -1210,26 +1300,28 @@
 
                 <Button
                     android:id="@+id/kata_wa"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/button_bg"
+                    android:background="@drawable/kata_button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/kat_wa"
-                    android:textSize="10sp"
                     android:onClick="wa_click"
+                    android:text="@string/kat_wa"
+                    android:textColor="@color/kata_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
 
                 <Button
                     android:id="@+id/kata_wo"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="180dp"
-                    android:background="@drawable/button_bg"
+                    android:layout_marginLeft="201dp"
+                    android:background="@drawable/kata_button_bg"
                     android:backgroundTint="@null"
-                    android:text="@string/kat_wo"
-                    android:textSize="10sp"
                     android:onClick="wo_click"
+                    android:text="@string/kat_wo"
+                    android:textColor="@color/kata_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
             </LinearLayout>
@@ -1242,13 +1334,14 @@
 
                 <Button
                     android:id="@+id/kata_n"
-                    android:layout_width="60dp"
+                    android:layout_width="67dp"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/button_bg"
+                    android:background="@drawable/kata_button_bg"
                     android:backgroundTint="@null"
+                    android:onClick="n_click"
                     android:text="@string/kat_n"
-                    android:textSize="10sp"
-                    android:onClick="no_click"
+                    android:textColor="@color/kata_text"
+                    android:textSize="12sp"
                     app:backgroundTint="@null" />
 
             </LinearLayout>
@@ -1259,13 +1352,15 @@
         android:id="@+id/hiragana"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
+        android:layout_marginStart="55dp"
         android:layout_marginBottom="30dp"
-        android:background="@drawable/button_bg"
+        android:background="@drawable/press_bg_1"
         android:backgroundTint="@null"
-        android:text="Hiragana"
-        android:textSize="10sp"
         android:onClick="hiragana_onClick"
+        android:text="Hiragana"
+        android:textColor="@color/hira_text"
+        android:textSize="10sp"
+        android:visibility="visible"
         app:backgroundTint="@null"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -1276,18 +1371,34 @@
         android:id="@+id/katakana"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="60dp"
+        android:layout_marginEnd="55dp"
         android:layout_marginBottom="30dp"
         android:background="@drawable/button_bg"
         android:backgroundTint="@null"
         android:backgroundTintMode="@null"
-        android:text="Katakana"
-        android:textSize="10sp"
         android:onClick="katakana_onClick"
+        android:text="Katakana"
+        android:textColor="@color/hira_text"
+        android:textSize="10sp"
+        android:visibility="visible"
         app:backgroundTint="@null"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.995"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/board_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Hiragana"
+         
+        android:textColor="#FFFFFFFF"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
