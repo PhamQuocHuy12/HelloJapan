@@ -12,6 +12,7 @@ import android.view.View;
 import android.view.animation.AccelerateInterpolator;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.view.animation.DecelerateInterpolator;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -31,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
     private Button katakana;
     private Animation fade_in;
     private Animation fade_out;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,6 +45,27 @@ public class MainActivity extends AppCompatActivity {
         hiragana = findViewById(R.id.hiragana);
         katakana = findViewById(R.id.katakana);
         katakana_board = findViewById(R.id.katakana_board);
+        fade_in = AnimationUtils.loadAnimation(MainActivity.this, R.anim.fade_in);
+        fade_out = AnimationUtils.loadAnimation(MainActivity.this, R.anim.fade_out);
+    }
+
+    @Override
+    protected void onStart(){
+        super.onStart();
+
+        hiragana_board.animate().alpha(1).setDuration(1000).start();
+        hiragana.animate().alpha(1).setDuration(1000).start();
+        board_name.animate().alpha(1).setDuration(1000).start();
+        katakana.animate().alpha(1).setDuration(1000).start();
+    }
+    @Override
+    protected void onResume(){
+        super.onResume();
+
+//        hiragana_board.animate().alpha(1).setDuration(1000).start();
+//        hiragana.animate().alpha(1).setDuration(1000).start();
+//        board_name.animate().alpha(1).setDuration(1000).start();
+//        katakana.animate().alpha(1).setDuration(1000).start();
     }
 
     public void hiragana_onClick (View view){
@@ -51,7 +74,9 @@ public class MainActivity extends AppCompatActivity {
         hiragana.setBackgroundResource(R.drawable.press_bg_1);
         katakana.setBackgroundResource(R.drawable.button_bg);
 
+        layout.startAnimation(fade_out);
         layout.setBackgroundResource(R.drawable.day);
+        layout.startAnimation(fade_in);
 
         katakana_board.setVisibility(View.GONE);
         hiragana_board.setVisibility(View.VISIBLE);
@@ -59,11 +84,11 @@ public class MainActivity extends AppCompatActivity {
         board_name.setText("Hiragana");
         board_name.setTextColor(Color.parseColor("#FFFFFF"));
 
-        hiragana_board.animate().alpha(1).setDuration(1000).start();
+        hiragana_board.animate().alpha(1).setDuration(500).start();
     }
 
     public void katakana_onClick (View view){
-        hiragana_board.animate().alpha(0).setDuration(1000).start();
+        hiragana_board.animate().alpha(0).setDuration(500).start();
 
         katakana.setBackgroundResource(R.drawable.press_bg_2);
         hiragana.setBackgroundResource(R.drawable.kata_button_bg);
@@ -71,7 +96,9 @@ public class MainActivity extends AppCompatActivity {
         hiragana_board.setVisibility(View.GONE);
         katakana_board.setVisibility(View.VISIBLE);
 
+        layout.startAnimation(fade_out);
         layout.setBackgroundResource(R.drawable.night);
+        layout.startAnimation(fade_in);
 
         board_name.setText("Katakana");
         board_name.setTextColor(Color.parseColor("#FFBF00"));
